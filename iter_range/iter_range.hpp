@@ -28,7 +28,7 @@ namespace detail_range {
 
         iterator& operator++(void)  { // prefix ++ opetator only
             value_ += step_;
-            ++ cursor_;
+            ++cursor_;
             return (*this);
         }
     };

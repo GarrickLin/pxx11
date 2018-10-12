@@ -12,6 +12,18 @@ void test_range(void) {
     for (auto i : range('a', 'z')) {
         std::cout << " " << i;
     }
+    std::cout << std::endl; 
+
+    std::cout << "range('a', static_cast<char>('z'+1)):";
+    for (auto i : range('a', static_cast<char>('z'+1))) {
+        std::cout << " " << i;
+    }
+    std::cout << std::endl;    
+
+    std::cout << "range(20, 10, -1):";
+    for (auto i : range(20, 10, -1)) {
+        std::cout << " " << i;
+    }
     std::cout << std::endl;    
 }
 
