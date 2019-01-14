@@ -2,16 +2,15 @@
 
 - [ ] core
   - [x] range
-- [ ] os
-  - [x] path
-    - [x] exists 
-    - [x] abspath
-    - [x] basename
-    - [x] dirname
-    - [x] isfile
-    - [x] isdir
-    - [x] join
-    - [x] split
+- [ ] os.path
+  - [x] exists 
+  - [x] abspath
+  - [x] basename
+  - [x] dirname
+  - [x] isfile
+  - [x] isdir
+  - [x] join
+  - [x] split
 - [ ] str
   - [x] split
   - [x] join
