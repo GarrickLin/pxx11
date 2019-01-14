@@ -1,5 +1,7 @@
 #include <iostream>
-#include "core/iter_range/iter_range.hpp"
+#include "pxx/core/iter_range/iter_range.hpp"
+
+using pxx::range;
 
 void test_range(void) {
     std::cout << "range(15):";

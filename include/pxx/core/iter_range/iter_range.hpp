@@ -80,21 +80,22 @@ namespace detail_range {
     };
 } // namespace detail_range
 
-template <typename T>
-detail_range::impl<T> range(T end) {
-    return {{}, end, 1};
-}
+namespace pxx {
+    template<typename T>
+    detail_range::impl<T> range(T end) {
+        return {{}, end, 1};
+    }
 
-template <typename T>
-detail_range::impl<T> range(T begin, T end) {
-    return {begin, end, 1};
-}
+    template<typename T>
+    detail_range::impl<T> range(T begin, T end) {
+        return {begin, end, 1};
+    }
 
-template <typename T, typename U>
-auto range(T begin, T end, U step) 
+    template<typename T, typename U>
+    auto range(T begin, T end, U step)
     -> detail_range::impl<decltype(begin + step)> {
-    // may be narrowing
-    using r_t = detail_range::impl<decltype(begin + step)>;
-    return r_t(begin, end, step);
-}
-
+        // may be narrowing
+        using r_t = detail_range::impl<decltype(begin + step)>;
+        return r_t(begin, end, step);
+    }
+} // namespace pxx
