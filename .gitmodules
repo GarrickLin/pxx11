@@ -1,0 +1,3 @@
+[submodule "python/conan_toolkits"]
+	path = python/conan_toolkits
+	url = git@gitlab.uni-ubi.com:algorithm-engineering/conan_toolkits.git

@@ -42,6 +42,7 @@ void test_str_strip() {
     std::cout << pxx::str::strip(" 12345678 \t\n\r") << std::endl;
     std::cout << pxx::str::strip("AABBCCAAA", "A") << std::endl;
     std::cout << pxx::str::rstrip("AABBCCAAA", "A") << std::endl;
+    std::cout << pxx::str::lstrip("AABBCCAAA", "A") << std::endl;
 }
 
 int main() {

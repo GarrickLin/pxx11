@@ -1,0 +1,7 @@
+- remotes: [uniubi]
+  # username: garrick
+  upload_only_when_stable: false
+
+- !BuildTask
+  name: any_platform
+  channel: stable
