@@ -1,4 +1,4 @@
-# pxx11 - A light-weight header only C++11 library for frequently python utils
+# pxx11 - A light-weight header only C++11 library for frequently used python utils
 
 [![License](https://img.shields.io/:license-MIT-blue.svg)](./LICENSE)
 
@@ -6,7 +6,7 @@
 
 `pxx11` is a easy to use C++ implemetation of python utils.
 
-[RoadMaps](./RoadMaps)
+[RoadMaps](./RoadMaps.md)
 
 ## Usage
   
